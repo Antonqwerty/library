@@ -18,4 +18,6 @@ public class Book {
     private String name;
 
     private Integer numbersOfPages;
+
+    private String pathFiles;
 }

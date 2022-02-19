@@ -23,3 +23,14 @@ databaseChangeLog:
                   type: integer
                   constraints:
                     nullable: false
+  - changeSet:
+      id: 2
+      author: antonqwerty
+      comment: add path to files
+      changes:
+        - addColumn:
+            tableName: book
+            columns:
+              - column:
+                  name: path_files
+                  type: varchar
