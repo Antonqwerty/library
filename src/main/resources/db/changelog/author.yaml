@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: antonqwerty
+      comment: create author table
+      changes:
+        - createTable:
+            tableName: author
+            columns:
+              - column:
+                  name: id
+                  type: bigserial
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                   name: surname
+                  type: varchar
+                  constraints:
+                    nullable: false
+              - column:
+                  name: dob
+                  type: bigserial
+                  constraints:
+                    nullable: false
