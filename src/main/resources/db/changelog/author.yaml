@@ -2,10 +2,10 @@ databaseChangeLog:
   - changeSet:
       id: 1
       author: antonqwerty
-      comment: create book table
+      comment: create author table
       changes:
         - createTable:
-            tableName: book
+            tableName: author
             columns:
               - column:
                   name: id
@@ -19,18 +19,12 @@ databaseChangeLog:
                   constraints:
                     nullable: false
               - column:
-                  name: numbers_of_pages
-                  type: integer
+                  name: surname
+                  type: varchar
                   constraints:
                     nullable: false
-  - changeSet:
-      id: 2
-      author: antonqwerty
-      comment: add path to files
-      changes:
-        - addColumn:
-            tableName: book
-            columns:
               - column:
-                  name: path_files
-                  type: varchar
+                  name: dob
+                  type: bigserial
+                  constraints:
+                    nullable: false
