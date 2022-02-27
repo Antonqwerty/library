@@ -10,7 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.util.Optional;
 
 @RestController
 @RequiredArgsConstructor
@@ -48,3 +47,4 @@ public class BookController {
 }
 //дописать оставшиеся методы+создать новую ветку и запушить результат и создать пулреквест
 //сделать контроллер по авторам,сохранеие и тд; попробовать сделать получения файла; добавить метод получение всех книг.
+//сделать тесты на методы автора или книги.
