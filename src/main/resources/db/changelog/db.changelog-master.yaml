@@ -3,3 +3,5 @@ databaseChangeLog:
       file: db/changelog/book.yaml
   - include:
       file: db/changelog/author.yaml
+  - include:
+      file: db/changelog/user.yaml
