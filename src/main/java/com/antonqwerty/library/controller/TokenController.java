@@ -22,7 +22,7 @@ public class TokenController {
     @Value("${jwt.secret}")
     private String secret;
 
-    @GetMapping
+    @GetMapping("/token")
     public Map<String, String> getUserName(@RequestParam String name) {
         String token = Jwts.builder()
                 .setSubject(name)
